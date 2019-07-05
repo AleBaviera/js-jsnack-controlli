@@ -14,7 +14,7 @@ for (var i = 0; i < 6; i++) {
   // se è dispari lo pusho nell'array
   if (num % 2 != 0){
     array.push(num);
-    
+
   }
 
 }

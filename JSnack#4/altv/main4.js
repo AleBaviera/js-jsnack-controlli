@@ -84,5 +84,5 @@ if(invito === 'sei invitato' && amico === 'si'){
   elemento.innerHTML = 'ti aspettiamo con ' + nomeamico;
 }
 else if (invito === 'sei invitato' && amico === 'no'){
-  elemento.innerHTML = 'ti aspettiamo';
+  elemento.innerHTML = 'ti aspettiamo. non preoccuparti, conoscerai sicuramente qualcuno!';
 }

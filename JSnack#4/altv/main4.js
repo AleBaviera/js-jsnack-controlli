@@ -53,7 +53,7 @@ if (invito === 'sei invitato'){
   if (amico === 'si'){
     nomeamico = prompt('aggiungi in lista il suo nome');
     // push nell'array
-    lista.push(nomeamico);
+    // lista.push(nomeamico);
   }
 
 

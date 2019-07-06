@@ -16,7 +16,7 @@ for (var i = 0; i < 6; i++) {
   // se è dispari lo pusho nell'array
   if (Number.isNaN(num)){   //vale su input?
      alert('HO DETTO NUMERO!');
-
+     i= i-1;
    }
 
   else if(num % 2 != 0){

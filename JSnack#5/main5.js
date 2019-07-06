@@ -13,12 +13,12 @@ for (var i = 0; i < 6; i++) {
 
   num = parseInt(prompt('inserisci un numero'));
 
-  // se è dispari lo pusho nell'array
-  if (Number.isNaN(num)){   //vale su input?
+// se nn è numero
+  if (Number.isNaN(num)){   
      alert('HO DETTO NUMERO!');
      i= i-1;
    }
-
+// se è dispari lo pusho nell'array
   else if(num % 2 != 0){
    array.push(num);
 

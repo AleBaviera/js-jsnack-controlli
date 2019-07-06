@@ -13,13 +13,13 @@ lista = [
 ]
 
 // inserisco nome
-nome = prompt('inserisci il tuo nome');
+nome = prompt('inserisci il tuo nome').toUpperCase();
 invito = 'non sei invitato';
 
 // confronto se concorda con array
 
 for (var i = 0; i < lista.length; i++) {
-  if(lista[i] === nome){
+  if(lista[i].toUpperCase() === nome){
     invito = 'sei invitato';
   }
 

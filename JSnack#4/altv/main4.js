@@ -42,12 +42,15 @@ if (invito === 'sei invitato'){
   if(amico !== 'no'&& amico !== 'si'){
     alert('non ho capito');
     amico = prompt('porti qualcuno? si/no');
+
   }
 
   else if(amico === 'no'){
     elemento.innerHTML = 'ti aspettiamo';
   }
-  else if (amico === 'si'){
+
+
+  if (amico === 'si'){
     nomeamico = prompt('aggiungi in lista il suo nome');
     // push nell'array
     lista.push(nomeamico);
@@ -60,7 +63,7 @@ else {
 }
 
 // push nell'array
-//lista.push(nomeamico);
+lista.push(nomeamico);
 
 // stampa nuova lista
 console.log(lista);

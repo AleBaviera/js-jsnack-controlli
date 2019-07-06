@@ -36,29 +36,37 @@ console.log(invito);
 
 
 // porta un amico?
+
+
+
 if (invito === 'sei invitato'){
   amico = prompt('porti qualcuno? si/no');
   // nome amico
+
+
   if(amico !== 'no'&& amico !== 'si'){
-    alert('non ho capito');
-    amico = prompt('porti qualcuno? si/no');
+  alert('non ho capito');
+  amico = prompt('porti qualcuno? si/no');
 
   }
 
-  else if(amico === 'no'){
-    elemento.innerHTML = 'ti aspettiamo';
-  }
-
-
+  if(amico === 'no'){
+  elemento.innerHTML = 'ti aspettiamo';
+}
   if (amico === 'si'){
     nomeamico = prompt('aggiungi in lista il suo nome');
     // push nell'array
     // lista.push(nomeamico);
   }
 
+  if(amico !== 'no'&& amico !== 'si'){
+  alert('stai esagerando, ricarica la pagina e ricomincia!');
+
+
+  }
 
 }
-else {
+else if (invito === 'non sei invitato') {
   elemento.innerHTML = 'non sei stato invitato :('
 }
 
@@ -75,6 +83,6 @@ console.log(lista);
 if(invito === 'sei invitato' && amico === 'si'){
   elemento.innerHTML = 'ti aspettiamo con ' + nomeamico;
 }
-else if (invito === 'sei invitato' ){
+else if (invito === 'sei invitato' && amico === 'no'){
   elemento.innerHTML = 'ti aspettiamo';
 }

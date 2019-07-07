@@ -40,26 +40,23 @@ console.log(invito);
 
 
 if (invito === 'sei invitato'){
-  amico = prompt('porti qualcuno? si/no');
+  amico = prompt('porti qualcuno? si/no').toUpperCase();
   // nome amico
 
 
-  if(amico !== 'no'&& amico !== 'si'){
+  if(amico !== 'NO'&& amico !== 'SI'){
   alert('non ho capito');
-  amico = prompt('porti qualcuno? si/no');
+  amico = prompt('porti qualcuno? si/no').toUpperCase();
 
   }
 
-  if(amico === 'no'){
-  elemento.innerHTML = 'ti aspettiamo';
-}
-  if (amico === 'si'){
+  if (amico === 'SI'){
     nomeamico = prompt('aggiungi in lista il suo nome');
     // push nell'array
     // lista.push(nomeamico);
   }
 
-  if(amico !== 'no'&& amico !== 'si'){
+  if(amico !== 'NO'&& amico !== 'SI'){
   alert('stai esagerando, ricarica la pagina e ricomincia!');
 
 
@@ -80,9 +77,9 @@ console.log(lista);
 
 // visualizza in pagina messaggio
 
-if(invito === 'sei invitato' && amico === 'si'){
+if(invito === 'sei invitato' && amico === 'SI'){
   elemento.innerHTML = 'ti aspettiamo con ' + nomeamico;
 }
-else if (invito === 'sei invitato' && amico === 'no'){
+else if (invito === 'sei invitato' && amico === 'NO'){
   elemento.innerHTML = 'ti aspettiamo. non preoccuparti, conoscerai sicuramente qualcuno!';
 }
